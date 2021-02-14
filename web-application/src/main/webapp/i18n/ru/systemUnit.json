@@ -1,0 +1,24 @@
+{
+    "wpcemApp": {
+        "systemUnit": {
+            "home": {
+                "title": "System Units",
+                "createLabel": "Создать новый System Unit",
+                "createOrEditLabel": "Создать или отредактировать System Unit"
+            },
+            "created": "Новый System Unit создан с идентификатором {{ param }}",
+            "updated": "System Unit обновлен с идентификатором {{ param }}",
+            "deleted": "System Unit удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить System Unit {{ id }}?"
+            },
+            "detail": {
+                "title": "System Unit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "controller": "Controller",
+            "users": "Users"
+        }
+    }
+}

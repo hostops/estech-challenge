@@ -1,0 +1,25 @@
+{
+    "wpcemApp": {
+        "systemDeviceType": {
+            "home": {
+                "title": "System Device Types",
+                "createLabel": "Pridať System Device Type",
+                "createOrEditLabel": "Pridať alebo upraviť System Device Type"
+            },
+            "created": "Bol vytvorený potomok entity System Device Type s identifikátorom {{ param }}",
+            "updated": "Potomok entity System Device Type s identifikátorom {{ param }} bol upravený.",
+            "deleted": "Potomok entity System Device Type s identifikátorom {{ param }} bol vymazaný.",
+            "delete": {
+                "question": "Ste si istý, že chcete vymazať System Device Type {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device Type"
+            },
+            "name": "Name",
+            "description": "Description",
+            "deviceType": "Device Type",
+            "dataSheet": "Data Sheet",
+            "devices": "Devices"
+        }
+    }
+}

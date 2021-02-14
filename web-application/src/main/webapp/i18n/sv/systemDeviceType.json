@@ -1,0 +1,25 @@
+{
+    "wpcemApp": {
+        "systemDeviceType": {
+            "home": {
+                "title": "System Device Types",
+                "createLabel": "Skapa en ny System Device Type",
+                "createOrEditLabel": "Skapa eller ändra en System Device Type"
+            },
+            "created": "En ny System Device Type är skapad med id {{ param }}",
+            "updated": "En System Device Type är uppdaterad med id  {{ param }}",
+            "deleted": "En System Device Type är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort System Device Type {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device Type"
+            },
+            "name": "Name",
+            "description": "Description",
+            "deviceType": "Device Type",
+            "dataSheet": "Data Sheet",
+            "devices": "Devices"
+        }
+    }
+}

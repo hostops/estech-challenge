@@ -1,0 +1,86 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-system-device-data-heading" jhiTranslate="wpcemApp.systemDeviceData.home.createOrEditLabel">Create or edit a System Device Data</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!systemDeviceData.id">
+                    <label for="id" jhiTranslate="global.field.id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="systemDeviceData.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="wpcemApp.systemDeviceData.timestamp" for="field_timestamp">Timestamp</label>
+                    <div class="d-flex">
+                        <input id="field_timestamp" type="datetime-local" class="form-control" name="timestamp" [(ngModel)]="timestamp" placeholder="YYYY-MM-DD HH:mm"
+                        required/>
+                    </div>
+                    <div [hidden]="!(editForm.controls.timestamp?.dirty && editForm.controls.timestamp?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.timestamp?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.timestamp?.errors?.ZonedDateTimelocal" jhiTranslate="entity.validation.ZonedDateTimelocal">
+                            This field should be a date and time.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="wpcemApp.systemDeviceData.dataValue" for="field_dataValue">Data Value</label>
+                    <input type="number" class="form-control" name="dataValue" id="field_dataValue"
+                        [(ngModel)]="systemDeviceData.dataValue" required/>
+                    <div [hidden]="!(editForm.controls.dataValue?.dirty && editForm.controls.dataValue?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dataValue?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                        <small class="form-text text-danger"
+                            [hidden]="!editForm.controls.dataValue?.errors?.number" jhiTranslate="entity.validation.number">
+                            This field should be a number.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="wpcemApp.systemDeviceData.dataType" for="field_dataType">Data Type</label>
+                    <select class="form-control" name="dataType" [(ngModel)]="systemDeviceData.dataType" id="field_dataType"  required>
+                        <option value="VIRTUAL">{{'wpcemApp.DataType.VIRTUAL' | translate}}</option>
+                        <option value="REAL">{{'wpcemApp.DataType.REAL' | translate}}</option>
+                    </select>
+                    <div [hidden]="!(editForm.controls.dataType?.dirty && editForm.controls.dataType?.invalid)">
+                        <small class="form-text text-danger"
+                        [hidden]="!editForm.controls.dataType?.errors?.required" jhiTranslate="entity.validation.required">
+                        This field is required.
+                        </small>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="wpcemApp.systemDeviceData.name" for="field_name">Name</label>
+                    <input type="text" class="form-control" name="name" id="field_name"
+                        [(ngModel)]="systemDeviceData.name" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="wpcemApp.systemDeviceData.unit" for="field_unit">Unit</label>
+                    <input type="text" class="form-control" name="unit" id="field_unit"
+                        [(ngModel)]="systemDeviceData.unit" />
+                </div>
+
+                <div class="form-group">
+                    <label class="form-control-label" jhiTranslate="wpcemApp.systemDeviceData.device" for="field_device">Device</label>
+                    <select class="form-control" id="field_device" name="device" [(ngModel)]="systemDeviceData.deviceId" >
+                        <option [ngValue]="null"></option>
+                        <option [ngValue]="systemDeviceOption.id" *ngFor="let systemDeviceOption of systemdevices; trackBy: trackSystemDeviceById">{{systemDeviceOption.serialNumber}}</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel">Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save">Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

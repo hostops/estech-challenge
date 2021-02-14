@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+    <!--
+        Added the constraints for entity SystemDevice.
+    -->
+    <changeSet id="20190406125546-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="type_id"
+                                 baseTableName="system_device"
+                                 constraintName="fk_system_device_type_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="system_device_type"/>
+
+        <addForeignKeyConstraint baseColumnNames="system_device_id"
+                                 baseTableName="system_device_connections_upcoming"
+                                 constraintName="fk_system_device_connections_upcoming_system_device_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="system_device"/>
+        <addForeignKeyConstraint baseColumnNames="connections_upcoming_id"
+                                 baseTableName="system_device_connections_upcoming"
+                                 constraintName="fk_system_device_connections_upcoming_connections_upcoming_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="system_device"/>
+        
+        <addForeignKeyConstraint baseColumnNames="system_unit_id"
+                                 baseTableName="system_device"
+                                 constraintName="fk_system_device_system_unit_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="system_unit"/>
+
+    </changeSet>
+</databaseChangeLog>

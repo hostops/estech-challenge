@@ -1,0 +1,59 @@
+entity SystemUnit {
+	name String required,
+    description String
+}
+
+entity SystemDevice {
+	serialNumber String,
+    deviceConfiguration String
+}
+
+// an ignored comment
+/** not an ignored comment */
+entity SystemDeviceType {
+	name String required,
+    description String required,
+    deviceType DeviceType,
+    dataSheet String
+}
+
+enum DeviceType {
+	CONTROLLER,
+    CONFIGURABLE,
+    PASSIVE,
+    SENSOR
+}
+
+entity SystemDeviceData {
+	timestamp Instant required,
+    dataValue Double required,
+    dataType DataType required,
+    name String,
+    unit String
+}
+
+enum DataType {
+	VIRTUAL,
+    REAL
+}
+
+
+relationship ManyToMany {
+	SystemUnit{users(login)} to User{systemUnits(name)}
+    SystemDevice{connectionsUpcoming(serialNumber)} to SystemDevice{connectionsOutgoing(serialNumber)}
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	SystemDevice{data(name)} to SystemDeviceData{device(serialNumber)}
+	SystemUnit {controller(serialNumber)} to SystemDevice{systemUnit(name)}
+}
+
+relationship ManyToOne {
+	
+	SystemDevice{type(name)} to SystemDeviceType{devices(serialNumber)}
+}
+
+paginate all with pagination
+service all with serviceImpl
+dto all with mapstruct

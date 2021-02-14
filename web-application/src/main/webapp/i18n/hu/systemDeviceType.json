@@ -1,0 +1,25 @@
+{
+    "wpcemApp": {
+        "systemDeviceType": {
+            "home": {
+                "title": "SystemDeviceTypes",
+                "createLabel": "Egy új System Device Type létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson System Device Typet"
+            },
+            "created": "Egy új System Device Type lett létrehozva {{ param }} azonosítóval",
+            "updated": "A System Device Type módosítva lett {{ param }} azonosítóval",
+            "deleted": "A System Device Type törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az System Device Typet {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "System Device Type"
+            },
+            "name": "Name",
+            "description": "Description",
+            "deviceType": "Device Type",
+            "dataSheet": "Data Sheet",
+            "devices": "Devices"
+        }
+    }
+}

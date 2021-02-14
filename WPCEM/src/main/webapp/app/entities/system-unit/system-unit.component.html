@@ -1,0 +1,48 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="wpcemApp.systemUnit.home.title">Systems</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-system-unit" [routerLink]="['/system-unit/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="wpcemApp.systemUnit.home.createLabel">
+            Create new System
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="systemUnits">
+        <table class="table table-striped">
+            <thead>
+            <tr jhiSort [(predicate)]="predicate" [(ascending)]="reverse" [callback]="transition.bind(this)">
+            <th jhiSortBy="name"><span jhiTranslate="wpcemApp.systemUnit.name">Name</span> <fa-icon [icon]="'sort'"></fa-icon></th>
+            <th ><span>System Size</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let systemUnit of systemUnits ;trackBy: trackId">
+                <td>{{systemUnit.name}}</td>
+                <td>{{systemUnit.systemDevices.length}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/system-unit', systemUnit.id, 'view' ]"
+                                class="btn btn-info">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="systemUnits && systemUnits.length">
+        <div class="row justify-content-center">
+            <jhi-item-count [page]="page" [total]="totalItems" [maxSize]="5" [itemsPerPage]="itemsPerPage"></jhi-item-count>
+        </div>
+        <div class="row justify-content-center">
+            <ngb-pagination [collectionSize]="totalItems" [(page)]="page" [pageSize]="itemsPerPage" [maxSize]="5" [rotate]="true" [boundaryLinks]="true" (pageChange)="loadPage(page)"></ngb-pagination>
+        </div>
+    </div>
+</div>

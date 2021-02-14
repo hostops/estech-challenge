@@ -1,0 +1,11 @@
+{
+    "wpcemApp": {
+        "DeviceType": {
+            "null": "",
+            "CONTROLLER": "CONTROLLER",
+            "CONFIGURABLE": "CONFIGURABLE",
+            "PASSIVE": "PASSIVE",
+            "SENSOR": "SENSOR"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "wpcemApp": {
+        "systemDeviceType": {
+            "home": {
+                "title": "System Device Type",
+                "createLabel": "Dodaj System Device Type",
+                "createOrEditLabel": "Dodaj lub edytuj: System Device Type"
+            },
+            "created": "Utworzono nowy obiekt typu System Device Type z identyfikatorem {{ param }}",
+            "updated": "Uaktualniono obiekt typu System Device Type z identyfikatorem {{ param }}",
+            "deleted": "Usunięto obiekt typu System Device Type z identyfikatorem {{ param }}",
+            "delete": {
+                "question": "Czy na pewno chcesz usunąć System Device Type {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device Type"
+            },
+            "name": "Name",
+            "description": "Description",
+            "deviceType": "Device Type",
+            "dataSheet": "Data Sheet",
+            "devices": "Devices"
+        }
+    }
+}

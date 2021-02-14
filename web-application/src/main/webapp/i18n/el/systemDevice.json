@@ -1,0 +1,27 @@
+{
+    "wpcemApp": {
+        "systemDevice": {
+            "home": {
+                "title": "System Devices",
+                "createLabel": "Δημιουργήστε ένα νέο System Device",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα System Device"
+            },
+            "created": "Ένα νέο System Device έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα System Device έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα System Device έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο System Device {{ id }};"
+            },
+            "detail": {
+                "title": "System Device"
+            },
+            "serialNumber": "Serial Number",
+            "deviceConfiguration": "Device Configuration",
+            "data": "Data",
+            "type": "Type",
+            "connectionsUpcoming": "Connections Upcoming",
+            "systemUnit": "System Unit",
+            "connectionsOutgoing": "Connections Outgoing"
+        }
+    }
+}

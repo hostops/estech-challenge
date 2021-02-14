@@ -1,0 +1,9 @@
+{
+    "wpcemApp": {
+        "DataType": {
+            "null": "",
+            "VIRTUAL": "VIRTUAL",
+            "REAL": "REAL"
+        }
+    }
+}

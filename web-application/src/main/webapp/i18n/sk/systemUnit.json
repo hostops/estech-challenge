@@ -1,0 +1,24 @@
+{
+    "wpcemApp": {
+        "systemUnit": {
+            "home": {
+                "title": "System Units",
+                "createLabel": "Pridať System Unit",
+                "createOrEditLabel": "Pridať alebo upraviť System Unit"
+            },
+            "created": "Bol vytvorený potomok entity System Unit s identifikátorom {{ param }}",
+            "updated": "Potomok entity System Unit s identifikátorom {{ param }} bol upravený.",
+            "deleted": "Potomok entity System Unit s identifikátorom {{ param }} bol vymazaný.",
+            "delete": {
+                "question": "Ste si istý, že chcete vymazať System Unit {{ id }}?"
+            },
+            "detail": {
+                "title": "System Unit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "controller": "Controller",
+            "users": "Users"
+        }
+    }
+}

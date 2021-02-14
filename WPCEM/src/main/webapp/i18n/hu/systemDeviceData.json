@@ -1,0 +1,26 @@
+{
+    "wpcemApp": {
+        "systemDeviceData": {
+            "home": {
+                "title": "SystemDeviceData",
+                "createLabel": "Egy új System Device Data létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson System Device Datat"
+            },
+            "created": "Egy új System Device Data lett létrehozva {{ param }} azonosítóval",
+            "updated": "A System Device Data módosítva lett {{ param }} azonosítóval",
+            "deleted": "A System Device Data törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az System Device Datat {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "System Device Data"
+            },
+            "timestamp": "Timestamp",
+            "dataValue": "Data Value",
+            "dataType": "Data Type",
+            "name": "Name",
+            "unit": "Unit",
+            "device": "Device"
+        }
+    }
+}

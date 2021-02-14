@@ -1,0 +1,26 @@
+{
+    "wpcemApp": {
+        "systemDeviceData": {
+            "home": {
+                "title": "SystemDeviceData",
+                "createLabel": "Genera un nuovo System Device Data",
+                "createOrEditLabel": "Genera o modifica un System Device Data"
+            },
+            "created": "&Egrave; stato generato un nuovo System Device Data con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato System Device Data identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato System Device Data con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare System Device Data {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device Data"
+            },
+            "timestamp": "Timestamp",
+            "dataValue": "Data Value",
+            "dataType": "Data Type",
+            "name": "Name",
+            "unit": "Unit",
+            "device": "Device"
+        }
+    }
+}

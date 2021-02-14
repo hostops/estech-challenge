@@ -1,0 +1,24 @@
+{
+    "wpcemApp": {
+        "systemUnit": {
+            "home": {
+                "title": "System Units",
+                "createLabel": "Δημιουργήστε ένα νέο System Unit",
+                "createOrEditLabel": "Δημιουργήστε η επεξεργαστείτε ένα System Unit"
+            },
+            "created": "Ένα νέο System Unit έχει δημιουργηθεί με αναγνωριστικό {{ param }}",
+            "updated": "Ένα System Unit έχει ενημερωθεί με αναγνωριστικό {{ param }}",
+            "deleted": "Ένα System Unit έχει διαγραφτεί με αναγνωριστικό {{ param }}",
+            "delete": {
+                "question": "Είστε βέβαιοι όταν θέλετε να διαγράψετε το ακόλουθο System Unit {{ id }};"
+            },
+            "detail": {
+                "title": "System Unit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "controller": "Controller",
+            "users": "Users"
+        }
+    }
+}

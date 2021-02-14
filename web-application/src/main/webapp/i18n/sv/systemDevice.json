@@ -1,0 +1,27 @@
+{
+    "wpcemApp": {
+        "systemDevice": {
+            "home": {
+                "title": "System Devices",
+                "createLabel": "Skapa en ny System Device",
+                "createOrEditLabel": "Skapa eller ändra en System Device"
+            },
+            "created": "En ny System Device är skapad med id {{ param }}",
+            "updated": "En System Device är uppdaterad med id  {{ param }}",
+            "deleted": "En System Device är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort System Device {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device"
+            },
+            "serialNumber": "Serial Number",
+            "deviceConfiguration": "Device Configuration",
+            "data": "Data",
+            "type": "Type",
+            "connectionsUpcoming": "Connections Upcoming",
+            "systemUnit": "System Unit",
+            "connectionsOutgoing": "Connections Outgoing"
+        }
+    }
+}

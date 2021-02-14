@@ -1,0 +1,46 @@
+{
+    "name": "SystemDeviceType",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "deviceType",
+            "fieldType": "DeviceType",
+            "fieldValues": "CONTROLLER,CONFIGURABLE,PASSIVE,SENSOR"
+        },
+        {
+            "fieldName": "dataSheet",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "systemDevice",
+            "otherEntityRelationshipName": "type",
+            "relationshipName": "devices"
+        }
+    ],
+    "changelogDate": "20190406125547",
+    "javadoc": "not an ignored comment",
+    "entityTableName": "system_device_type",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

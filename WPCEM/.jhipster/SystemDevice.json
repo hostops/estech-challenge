@@ -1,0 +1,60 @@
+{
+    "name": "SystemDevice",
+    "fields": [
+        {
+            "fieldName": "serialNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "deviceConfiguration",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "systemDeviceData",
+            "otherEntityRelationshipName": "device",
+            "relationshipName": "data"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "systemDeviceType",
+            "otherEntityRelationshipName": "devices",
+            "relationshipName": "type",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "systemDevice",
+            "otherEntityRelationshipName": "connectionsOutgoing",
+            "relationshipName": "connectionsUpcoming",
+            "otherEntityField": "serialNumber",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "systemUnit",
+            "otherEntityRelationshipName": "controller",
+            "relationshipName": "systemUnit",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "systemDevice",
+            "otherEntityRelationshipName": "connectionsUpcoming",
+            "relationshipName": "connectionsOutgoing",
+            "otherEntityField": "serialNumber",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20190406125546",
+    "entityTableName": "system_device",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

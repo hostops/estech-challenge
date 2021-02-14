@@ -1,0 +1,27 @@
+{
+    "wpcemApp": {
+        "systemDevice": {
+            "home": {
+                "title": "SystemDevices",
+                "createLabel": "Egy új System Device létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson System Devicet"
+            },
+            "created": "Egy új System Device lett létrehozva {{ param }} azonosítóval",
+            "updated": "A System Device módosítva lett {{ param }} azonosítóval",
+            "deleted": "A System Device törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az System Devicet {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "System Device"
+            },
+            "serialNumber": "Serial Number",
+            "deviceConfiguration": "Device Configuration",
+            "data": "Data",
+            "type": "Type",
+            "connectionsUpcoming": "Connections Upcoming",
+            "systemUnit": "System Unit",
+            "connectionsOutgoing": "Connections Outgoing"
+        }
+    }
+}

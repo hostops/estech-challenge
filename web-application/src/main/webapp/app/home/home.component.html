@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-md-3">
+        <span class="hipster img-fluid rounded"></span>
+    </div>
+    <div class="col-md-9">
+        <h1 class="display-4">Welcome to Water Pipe Connectivity and Efficiency Management</h1>
+        <p class="lead">We make controlling water systems easier...</p>
+
+        <div [ngSwitch]="isAuthenticated()">
+            <div class="alert alert-success" *ngSwitchCase="true">
+                <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message"
+                    [translateValues]="{username: account.login}"> You are logged in as user "{{account.login}}". </span>
+            </div>
+
+            <div class="alert alert-warning" *ngSwitchCase="false">
+                <span>Please </span>
+                <a class="alert-link" (click)="login()">sign in</a><span>...</span>
+            </div>
+            <div class="alert alert-warning" *ngSwitchCase="false">
+                <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>&nbsp;
+                <a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
+            </div>
+        </div>
+
+        <p>
+            If you have any questions contact us:
+        </p>
+
+        <ul>
+            <li><a href="mailto:jakob@wpcem.ga" target="_blank" rel="noopener">Jakob</a></li>
+            <li><a href="mailto:fares@wpcem.ga" target="_blank" rel="noopener">Fares</a></li>
+            <li><a href="mailto:miha@wpcem.ga" target="_blank" rel="noopener">Miha</a></li>
+        </ul>
+    </div>
+</div>

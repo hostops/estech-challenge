@@ -1,0 +1,26 @@
+{
+    "wpcemApp": {
+        "systemDeviceData": {
+            "home": {
+                "title": "SystemDeviceData",
+                "createLabel": "System Device Data を追加",
+                "createOrEditLabel": "System Device Dataを追加または編集"
+            },
+            "created": "A new System Device Data is created with identifier {{ param }}",
+            "updated": "A System Device Data is updated with identifier {{ param }}",
+            "deleted": "A System Device Data is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "System Device Data {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "System Device Data"
+            },
+            "timestamp": "Timestamp",
+            "dataValue": "Data Value",
+            "dataType": "Data Type",
+            "name": "Name",
+            "unit": "Unit",
+            "device": "Device"
+        }
+    }
+}

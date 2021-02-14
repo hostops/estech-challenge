@@ -1,0 +1,26 @@
+{
+    "wpcemApp": {
+        "systemDeviceData": {
+            "home": {
+                "title": "System Device Data",
+                "createLabel": "Pridať System Device Data",
+                "createOrEditLabel": "Pridať alebo upraviť System Device Data"
+            },
+            "created": "Bol vytvorený potomok entity System Device Data s identifikátorom {{ param }}",
+            "updated": "Potomok entity System Device Data s identifikátorom {{ param }} bol upravený.",
+            "deleted": "Potomok entity System Device Data s identifikátorom {{ param }} bol vymazaný.",
+            "delete": {
+                "question": "Ste si istý, že chcete vymazať System Device Data {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device Data"
+            },
+            "timestamp": "Timestamp",
+            "dataValue": "Data Value",
+            "dataType": "Data Type",
+            "name": "Name",
+            "unit": "Unit",
+            "device": "Device"
+        }
+    }
+}

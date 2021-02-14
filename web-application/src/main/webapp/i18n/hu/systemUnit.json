@@ -1,0 +1,24 @@
+{
+    "wpcemApp": {
+        "systemUnit": {
+            "home": {
+                "title": "SystemUnits",
+                "createLabel": "Egy új System Unit létrehozása",
+                "createOrEditLabel": "Hozzon létre, vagy módosítson System Unitt"
+            },
+            "created": "Egy új System Unit lett létrehozva {{ param }} azonosítóval",
+            "updated": "A System Unit módosítva lett {{ param }} azonosítóval",
+            "deleted": "A System Unit törölve lett {{ param }} azonosítóval",
+            "delete": {
+                "question": "Biztos benne, hogy törölni szeretné az System Unitt {{ id }} azonosítóval?"
+            },
+            "detail": {
+                "title": "System Unit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "controller": "Controller",
+            "users": "Users"
+        }
+    }
+}

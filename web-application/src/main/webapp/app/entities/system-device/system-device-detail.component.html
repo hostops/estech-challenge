@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="systemDevice">
+            <h2> {{systemDevice.systemUnitName}}: <a>{{systemDevice.serialNumber}}</a> <a
+                [routerLink]="['/system-device-type', systemDevice.typeId, 'view']">{{systemDevice.typeName}}</a>
+                <button type="submit"
+                        (click)="previousState()"
+                        class="btn btn-info">
+                    <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+                </button>
+
+                <button type="button"
+                        [routerLink]="['/system-device', systemDevice.id, 'edit']"
+                        class="btn btn-primary">
+                    <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+                </button>
+            </h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="wpcemApp.systemDevice.deviceConfiguration">Device Configuration</span></dt>
+                <dd>
+                    <span>{{systemDevice.deviceConfiguration}}</span>
+                </dd>
+                <dd>
+                    <canvas id="trend-graph" style="width: 100%; height: 400px;">
+
+                    </canvas>
+                </dd>
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th><span>Timestamp</span></th>
+                        <th><span>Value</span></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr *ngFor="let data of systemDevice.data; trackBy: trackId">
+                        <td>{{data.timestamp}}</td>
+                        <td>{{data.dataValue}} {{data.unit}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </dl>
+        </div>
+    </div>
+</div>

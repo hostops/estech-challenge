@@ -1,0 +1,26 @@
+{
+    "wpcemApp": {
+        "systemDeviceData": {
+            "home": {
+                "title": "System Device Data",
+                "createLabel": "Создать новый System Device Data",
+                "createOrEditLabel": "Создать или отредактировать System Device Data"
+            },
+            "created": "Новый System Device Data создан с идентификатором {{ param }}",
+            "updated": "System Device Data обновлен с идентификатором {{ param }}",
+            "deleted": "System Device Data удален с идентификатором {{ param }}",
+            "delete": {
+                "question": "Вы уверены что хотите удалить System Device Data {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device Data"
+            },
+            "timestamp": "Timestamp",
+            "dataValue": "Data Value",
+            "dataType": "Data Type",
+            "name": "Name",
+            "unit": "Unit",
+            "device": "Device"
+        }
+    }
+}

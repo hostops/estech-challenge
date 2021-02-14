@@ -1,0 +1,24 @@
+{
+    "wpcemApp": {
+        "systemUnit": {
+            "home": {
+                "title": "SystemUnits",
+                "createLabel": "Genera un nuovo System Unit",
+                "createOrEditLabel": "Genera o modifica un System Unit"
+            },
+            "created": "&Egrave; stato generato un nuovo System Unit con identificatore {{ param }}",
+            "updated": "&Egrave; stato aggiornato System Unit identificato da {{ param }}",
+            "deleted": "&Egrave; stato eliminato System Unit con identificatore {{ param }}",
+            "delete": {
+                "question": "Sei sicuro di volere eliminare System Unit {{ id }}?"
+            },
+            "detail": {
+                "title": "System Unit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "controller": "Controller",
+            "users": "Users"
+        }
+    }
+}

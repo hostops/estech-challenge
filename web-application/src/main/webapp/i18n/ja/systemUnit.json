@@ -1,0 +1,24 @@
+{
+    "wpcemApp": {
+        "systemUnit": {
+            "home": {
+                "title": "SystemUnits",
+                "createLabel": "System Unit を追加",
+                "createOrEditLabel": "System Unitを追加または編集"
+            },
+            "created": "A new System Unit is created with identifier {{ param }}",
+            "updated": "A System Unit is updated with identifier {{ param }}",
+            "deleted": "A System Unit is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "System Unit {{ id }}を削除してもよろしいですか？"
+            },
+            "detail": {
+                "title": "System Unit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "controller": "Controller",
+            "users": "Users"
+        }
+    }
+}

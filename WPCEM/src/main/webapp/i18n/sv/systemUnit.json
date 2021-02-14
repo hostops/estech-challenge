@@ -1,0 +1,24 @@
+{
+    "wpcemApp": {
+        "systemUnit": {
+            "home": {
+                "title": "System Units",
+                "createLabel": "Skapa en ny System Unit",
+                "createOrEditLabel": "Skapa eller ändra en System Unit"
+            },
+            "created": "En ny System Unit är skapad med id {{ param }}",
+            "updated": "En System Unit är uppdaterad med id  {{ param }}",
+            "deleted": "En System Unit är borttagen med id  {{ param }}",
+            "delete": {
+                "question": "Är du säker på att du vill ta bort System Unit {{ id }}?"
+            },
+            "detail": {
+                "title": "System Unit"
+            },
+            "name": "Name",
+            "description": "Description",
+            "controller": "Controller",
+            "users": "Users"
+        }
+    }
+}

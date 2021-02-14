@@ -1,0 +1,27 @@
+{
+    "wpcemApp": {
+        "systemDevice": {
+            "home": {
+                "title": "System Devices",
+                "createLabel": "Pridať System Device",
+                "createOrEditLabel": "Pridať alebo upraviť System Device"
+            },
+            "created": "Bol vytvorený potomok entity System Device s identifikátorom {{ param }}",
+            "updated": "Potomok entity System Device s identifikátorom {{ param }} bol upravený.",
+            "deleted": "Potomok entity System Device s identifikátorom {{ param }} bol vymazaný.",
+            "delete": {
+                "question": "Ste si istý, že chcete vymazať System Device {{ id }}?"
+            },
+            "detail": {
+                "title": "System Device"
+            },
+            "serialNumber": "Serial Number",
+            "deviceConfiguration": "Device Configuration",
+            "data": "Data",
+            "type": "Type",
+            "connectionsUpcoming": "Connections Upcoming",
+            "systemUnit": "System Unit",
+            "connectionsOutgoing": "Connections Outgoing"
+        }
+    }
+}

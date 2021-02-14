@@ -1,0 +1,49 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="systemDeviceData">
+            <h2><span jhiTranslate="wpcemApp.systemDeviceData.detail.title">System Device Data</span> {{systemDeviceData.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="wpcemApp.systemDeviceData.timestamp">Timestamp</span></dt>
+                <dd>
+                    <span>{{systemDeviceData.timestamp}}</span>
+                </dd>
+                <dt><span jhiTranslate="wpcemApp.systemDeviceData.dataValue">Data Value</span></dt>
+                <dd>
+                    <span>{{systemDeviceData.dataValue}}</span>
+                </dd>
+                <dt><span jhiTranslate="wpcemApp.systemDeviceData.dataType">Data Type</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'wpcemApp.DataType.' + systemDeviceData.dataType}}">{{systemDeviceData.dataType}}</span>
+                </dd>
+                <dt><span jhiTranslate="wpcemApp.systemDeviceData.name">Name</span></dt>
+                <dd>
+                    <span>{{systemDeviceData.name}}</span>
+                </dd>
+                <dt><span jhiTranslate="wpcemApp.systemDeviceData.unit">Unit</span></dt>
+                <dd>
+                    <span>{{systemDeviceData.unit}}</span>
+                </dd>
+                <dt><span jhiTranslate="wpcemApp.systemDeviceData.device">Device</span></dt>
+                <dd>
+                    <div *ngIf="systemDeviceData.deviceId">
+                        <a [routerLink]="['/system-device', systemDeviceData.deviceId, 'view']">{{systemDeviceData.deviceSerialNumber}}</a>
+                    </div>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/system-device-data', systemDeviceData.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
